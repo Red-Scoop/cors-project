@@ -1,26 +1,19 @@
 services:
-
   a-service:
-    hostname: a-service
     build:
       context: .
       dockerfile: Dockerfile
     networks:
       - common
-    env_file:
-      - ./.env
     restart: unless-stopped
     command: node dist/a-service.js
 
   b-service:
-    hostname: b-service
     build:
       context: .
       dockerfile: Dockerfile
     networks:
       - common
-    env_file:
-      - ./.env
     restart: unless-stopped
     command: node dist/b-service.js
 
