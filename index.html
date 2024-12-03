@@ -14,7 +14,7 @@
 	window.addEventListener("load", async function (_) {
 		const resp = await fetch(`/a-service/test`)
         const json = await resp.json()
-        alert(`Получен ответ от сервера: ${JSON.stringify(json)}`)
+        alert(`Получен ответ от a-service: ${JSON.stringify(json)}`)
 	});
 </script>
 </body>
