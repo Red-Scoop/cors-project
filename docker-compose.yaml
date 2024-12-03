@@ -25,6 +25,7 @@ services:
       - common
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:rw
+      - ./index.html:/app/index.html
     restart: unless-stopped
 
     ports:
