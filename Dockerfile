@@ -16,6 +16,3 @@ COPY --chown=user:user . .
 RUN npm run build
 CMD npm run start
 
-FROM build as clearing
-RUN rm -rf src
-
